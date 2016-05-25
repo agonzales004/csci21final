@@ -48,7 +48,7 @@ marsrockettest: mars_test.o rocketship.o specialrocketship.o
 	
 #creates the mars rocketship executable
 marstest: mars.o rocketship.o specialrocketship.o CinReader.o
-	g++ -Wall -g -o marstest mars.o Rocketship.o specialrocketship.o CinReader.o
+	g++ -Wall -g -o marstest mars.o rocketship.o specialrocketship.o CinReader.o
 	
 #creates the earth unit test object file
 earthunittest: earth_test.cpp
